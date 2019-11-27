@@ -29,7 +29,7 @@ public class findNegativeModern {
         int max = scanner.nextInt();
         return max;
     }
-
+//    проверка введенных чисел на соответствие условиям
     public static int testInput(int min, int max) {
         int testOk = 0;
         if (min == -10 && max == 10) {
@@ -55,6 +55,12 @@ public class findNegativeModern {
     // подсчет негативных чисел в массиве
     public static int countNegative(int arr[]) {
         int countNegative = 0;
+      /*
+        for (int i : arr) {
+            if (arr[i] < 0) {
+                countNegative++;
+
+            }*/
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] < 0) {
                 countNegative++;
@@ -88,10 +94,11 @@ public class findNegativeModern {
         return arr;
     }
 
-    public static void showArr(int arr[]){
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i]+", ");
+    public static void showArr(int arr[]) {
+        for (int i = 0; i < arr.length; i++)  {
+            System.out.print(arr[i] + ", ");
         }
+
     }
 
     public static void main(String[] args) {
