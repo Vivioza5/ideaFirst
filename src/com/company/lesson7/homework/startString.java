@@ -4,6 +4,5 @@ public class startString {
     public static void main(String[] args) {
         String testString = "testing";
         System.out.println(testString.startsWith("test"));
-
     }
 }

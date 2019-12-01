@@ -1,6 +1,8 @@
 package com.company.lesson8;
 
-public class stringEX {
+import com.company.lesson6.homeworks.FindNegativeModern;
+
+public class StringEX {
     public static void main(String[] args) {
 
         StringBuffer str = new StringBuffer("Hello=)");
@@ -16,6 +18,7 @@ public class stringEX {
         System.out.println(str2.capacity());*/
         StringBuffer str2 = new StringBuffer();
         str2.append("Hello Kiev");
+        FindNegativeModern.InputFirst();
 
     }
 }

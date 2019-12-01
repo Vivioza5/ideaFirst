@@ -6,5 +6,6 @@ public class CharForIndex {
         String testString = "Hello World!!";
         char myChar = testString.charAt(4);
         System.out.println(myChar);
+
     }
 }

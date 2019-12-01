@@ -3,7 +3,7 @@ package com.company.lesson6.homeworks;
 import java.util.Random;
 import java.util.Scanner;
 
-public class findNegativeModern {
+public class FindNegativeModern {
 
     //метод спрашивает хотите создать массив случайных чисел или ввести числа с клавиатуры
     public static String selectLoadArr() {
@@ -105,22 +105,22 @@ public class findNegativeModern {
 //        запрос и ввод двух граничных чисел
 
 //       вибор метода ввода массіва
-        String change = findNegativeModern.selectLoadArr();
+        String change = FindNegativeModern.selectLoadArr();
 
         switch (change) {
 //  создание массива случайных чисел и просчет негативных чисел в массиве и вывод индексов негативных чисел
             case "y":
-                int min = findNegativeModern.InputFirst();
-                int max = findNegativeModern.InputSecond();
+                int min = FindNegativeModern.InputFirst();
+                int max = FindNegativeModern.InputSecond();
 //        проверка на соответстие условию
-                int StatusTest = findNegativeModern.testInput(min, max);
+                int StatusTest = FindNegativeModern.testInput(min, max);
 //        System.out.println(StatusTest);
 //        создание массива в случае прохода теста либо вывод error message
                 if (StatusTest == 1) {
-                    int[] newArray1 = findNegativeModern.loadArray(min, max);
+                    int[] newArray1 = FindNegativeModern.loadArray(min, max);
                     System.out.print("index of negative numbers: ");
-                    int[] newArray2 = findNegativeModern.listArray(newArray1);
-                    int countNegative = findNegativeModern.countNegative(newArray1);
+                    int[] newArray2 = FindNegativeModern.listArray(newArray1);
+                    int countNegative = FindNegativeModern.countNegative(newArray1);
                     System.out.println(" ");
 
                     System.out.println("Count of negative numbers =  " + countNegative);
@@ -130,8 +130,8 @@ public class findNegativeModern {
                 break;
 // создание массива чисел вручную
             case "n":
-                int[] arrScanner = findNegativeModern.loadArrFromScanner();
-                findNegativeModern.showArr(arrScanner);
+                int[] arrScanner = FindNegativeModern.loadArrFromScanner();
+                FindNegativeModern.showArr(arrScanner);
                 break;
             default:
                 System.out.println("вы сделали неправильный выбор массив не будет создан");

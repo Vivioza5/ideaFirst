@@ -6,5 +6,6 @@ public class someChars {
         String testString = "testing";
         boolean test = testString.contains("st");
         System.out.println(test);
+
     }
 }
