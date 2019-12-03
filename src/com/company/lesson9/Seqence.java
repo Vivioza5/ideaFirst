@@ -20,6 +20,7 @@ public class Seqence {
         }
         System.out.println(sum1);
         System.out.println(sum2);
+
     }
     }
 
