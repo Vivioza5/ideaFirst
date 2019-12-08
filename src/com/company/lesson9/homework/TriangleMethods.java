@@ -8,7 +8,7 @@ public class TriangleMethods {
         double S = Math.sqrt (p*(p-a)*(p-b)*(p-c));
         return S;
     }
-
+//вывод приглашения отдельный класс вывод для фигур, как на лету изменять  параметрі методов?
     public static void main(String[] args) {
 
         System.out.println("введите стороны треугольника");
